@@ -54,10 +54,8 @@ export default function App(){
     <div className={"container"}>
       <>
         <Intro status={false}>
-        <span>Lorem</span>
-        <span>Ipsum</span>
-        <span>Dolor</span>
-        <span>Sit</span>
+        <span>Hello,</span>
+        <span>I'm Rafhly!</span>
         </Intro>
       </>
     </div>

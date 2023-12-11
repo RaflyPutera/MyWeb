@@ -3,12 +3,13 @@ import { animated } from '@react-spring/web'
 
 
 export const TreeContainer = styled('div')`
+    background-color: #C7C7C7;
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 10px;
+    padding: 40px;
     overflow: hidden;
-    font-family: ui-monospace, monospace;
+    font-family: 'Outfit', sans-serif;
     font-size: 20px;
     line-height: 30px;
     --webkit-user-select: none;
@@ -16,7 +17,7 @@ export const TreeContainer = styled('div')`
     display: block;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 20px;
     background: ;
     `
 
@@ -40,7 +41,7 @@ export const Content = styled(animated.div)`
     will-change: transform, opacity, height;
     margin-left: 6px;
     padding: 0px 0px 0px 14px;
-    border-left: 1px dashed rgba(255, 255, 255, 0.4);
+    border-left: 1px dashed rgba(81, 27, 130, 0.4);
     overflow: hidden;
     `
 

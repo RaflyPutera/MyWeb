@@ -60,10 +60,9 @@ export const TreeView = ()=>{
         <>
         <animated.div style={spring}>
         <TreeContainer>
-            <Tree name="ok">
-                <Tree name="pl"/>
-            </Tree>
-            <Tree name="main">
+            <h2>Learn more about me.</h2>
+            <Tree name="About me">
+                <Tree name="Description"/>
                 <Tree name="hello" />
                     <Tree name="subtree with children">
                         <Tree name="hello" />
@@ -71,7 +70,7 @@ export const TreeView = ()=>{
                                 <Tree name="child 1" style={{ color: '#37ceff' }} />
                                 <Tree name="child 2" style={{ color: '#37ceff' }} />
                                 <Tree name="child 3" style={{ color: '#37ceff' }} />
-                                <Tree name="custom content">
+                                {/* <Tree name="custom content">
                         <div
                             style={{
                             position: 'relative',
@@ -87,10 +86,21 @@ export const TreeView = ()=>{
                             borderRadius: 5,
                             }}/>
                         </div>
-                                </Tree>
+                                </Tree> */}
                             </Tree>
                     </Tree>
                 <Tree name={<span>something something</span>} />
+            </Tree>
+            <Tree name="Contact me">
+                <div style={{marginTop:'10px'}}>
+                    <Icons.GithubIcon width={20} height={20}/><a href="" style={{marginLeft:'10px'}}>Github</a>
+                </div>
+                <div style={{marginTop:'10px'}}>
+                    <Icons.LinkedInIcon width={20} height={20} /><a href="" style={{marginLeft:'10px'}}>LinkedIn</a>
+                </div>
+                <div style={{marginTop:'10px',height:'40px'}}>
+                    <Icons.MailIcon width={20} height={20}/><a href="" style={{marginLeft:'10px'}}>rafly.s.putera@gmail.com</a>
+                </div>
             </Tree>
         </TreeContainer>
         </animated.div>
