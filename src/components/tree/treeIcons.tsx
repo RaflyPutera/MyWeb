@@ -43,5 +43,8 @@ const LinkedInIcon: React.FC=(props)=>(
 const MailIcon: React.FC=(props)=>(
 <svg {...props} role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>)
 
+const ButtonIcon: React.FC=()=>(
+<svg xmlns="http://www.w3.org/2000/svg"  width="25" height="27" viewBox="6 0 15 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /></svg>
+)
 
-export { PlusSquareO, MinusSquareO, CloseSquareO, GithubIcon, LinkedInIcon, MailIcon };
+export { PlusSquareO, MinusSquareO, CloseSquareO, GithubIcon, LinkedInIcon, MailIcon, ButtonIcon };

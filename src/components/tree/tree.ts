@@ -4,7 +4,6 @@ import { animated } from '@react-spring/web'
 
 export const TreeContainer = styled('div')`
     background-color: #C7C7C7;
-    width: 100%;
     height: 100%;
     margin: 0;
     padding: 40px;
@@ -18,23 +17,39 @@ export const TreeContainer = styled('div')`
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background: ;
     `
 
 export const Frame = styled('div')`
-    overflow-y:hidden;
+    display:block;
+    // overflow-y:hidden;
     position: relative;
-    padding: 4px 0px 0px 0px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow-x: hidden;
+    // padding: 4px 0px 0px 0px;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // overflow-x: hidden;
     vertical-align: middle;
-    color: #24292e;
-    fill: #24292e;
+    // color: #24292e;
+    // fill: #24292e;
     `
 
 export const Title = styled('span')`
     vertical-align: middle;
+    `
+
+export const TitleButton=styled.button<{active:boolean}>`
+    vertical-align: middle;
+    margin-left:-2px;
+    font-family: 'Outfit', sans-serif;
+    font-size:20px;
+    background-color: transparent;
+    border-color:transparent;
+    cursor:pointer;
+    // color: #24292e;
+    color: ${props=>props.active?'#3640ad':'#24292e'};
+
+    &:hover{
+        color: #3640ad;
+    }
     `
 
 export const Content = styled(animated.div)`

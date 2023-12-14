@@ -2,7 +2,7 @@
 import React, {useEffect, useState } from 'react'
 import './App.css'
 import {useTrail,a } from '@react-spring/web'
-import { TreeView } from './components/tree.tsx'
+import { TreeView } from './components/tree/tree.tsx'
 
 interface Props{
   status:boolean,
@@ -38,12 +38,12 @@ const Intro=({status,children}:Props)=>{
   return (
     <>
       <div>
-      {!tree && trail.map(({ height, ...style }, index) => (
-        <a.div key={index} className={"trailsText"} style={style}>
-          <a.div style={{ height }}>{items[index]}</a.div>
-        </a.div>
-      ))}
-      {tree && <TreeView/>}
+        {!tree && trail.map(({ height, ...style }, index) => (
+          <a.div key={index} className={"trailsText"} style={style}>
+            <a.div style={{ height }}>{items[index]}</a.div>
+          </a.div>
+        ))}
+        {tree && <TreeView/>}
       </div>
     </>
   )
@@ -54,8 +54,9 @@ export default function App(){
     <div className={"container"}>
       <>
         <Intro status={false}>
-        <span>Hello,</span>
-        <span>I'm Rafhly!</span>
+        {/* <span>Hello,</span>
+        <span>I'm Rafhly!</span> */}
+        <span>X</span>
         </Intro>
       </>
     </div>
