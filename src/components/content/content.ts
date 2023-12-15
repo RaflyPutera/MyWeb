@@ -3,6 +3,7 @@ import { animated } from '@react-spring/web'
 
 export const ContentContainer=styled(animated.div)`
     align-items:center;
+    overflow:hidden;
     display:flex;
     // opacity:1;
     justify-content:center;
@@ -12,6 +13,7 @@ export const ContentContainer=styled(animated.div)`
     z-index:-1;
 `
 export const ContentFile=styled(animated.div)`
+    overflow:hidden;
     padding:20px;
     display:flex;
     background-color:#C7C7C7;
